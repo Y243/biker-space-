@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: "Flamenco", system-ui;
+    font-family: "Poppins", system-ui;
 }
 body{
     max-width: 1440px;
@@ -10,8 +10,7 @@ body{
 }
 .firstsection{
     padding: 10px 156px;
-    background-image: url(./../assets/Rectangle\ 4705\ \(1\).png);
-    background-repeat: no-repeat;
+    background-image: url(../assets/Rectangle\ 4705\ \(1\).png);
     background-size: cover;
     width: 100%;
     height: 710px;
@@ -59,14 +58,14 @@ body{
     margin-left: 9px;
 }
 a{
-    color: teal;
+    color: white;
     z-index: 4;
     text-decoration: none;
     font-size: 22px;
     margin: 0 0 0 12px;
 }
 a:hover {
-    color: aquamarine;
+    color: aqua;
 }
 nav{
     z-index: 31;
@@ -78,11 +77,32 @@ nav{
     font-size: 65px;
     font-weight: 600;
 }
+.h1 {
+    font-size: 65px;
+    line-height: 85px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+/* 2nd section featured bikes */
+.fbbikes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 138px;
+    mix-blend-mode: multiply;
+}
+
+/* LATEST NEWS  */
+
 /* card 1 */
+
 .card_1{
     width: 377px;
-    height: 420px;
-    background-color: crimson;
+    height: 465px;
+    background-color: white;
     margin-top: 40px;
     border-radius: 10px;
     padding: 8px;
@@ -93,10 +113,10 @@ nav{
 }
 .card_1 h2{
     margin-top: 10px;
-    color: aliceblue;
+    color: black;
 }
 .card_1 p{
-    color: aliceblue;
+    color: black;
     margin: 10px 0 0 0 ;
 }
 .card_1 button{
@@ -107,8 +127,8 @@ nav{
     cursor: pointer;
 }
 .card_1 button:hover{
-    background-color: blue;
-    color: antiquewhite;
+    background-color: #E76F51;
+    color: white;
     transition: all;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -118,8 +138,8 @@ nav{
 /* card 2 */
 .card_2 {
     width: 377px;
-    height: 450px;
-    background-color: green;
+    height: 465px;
+    background-color: white;
     margin-top: 40px;
     border-radius: 10px;
     padding: 8px;
@@ -130,10 +150,10 @@ nav{
 }
 .card_2  h2 {
     margin-top: 10px;
-    color: aliceblue;
+    color: black;
 }
 .card_2 p {
-    color: aliceblue;
+    color: black;
     margin: 10px 0 0 0;
 }
  .card_2 button {
@@ -144,7 +164,7 @@ nav{
     cursor: pointer;
 }
 .card_2 button:hover {
-    background-color: olivedrab;
+    background-color: #E76F51;
     color: antiquewhite;
     transition: all;
     animation-duration: 3s;
@@ -154,8 +174,8 @@ nav{
 /* card 3 */
 .card_3 {
     width: 377px;
-    height: 418px;
-    background-color: indigo;
+    height: 465px;
+    background-color: white;
     margin-top: 40px;
     border-radius: 10px;
     padding: 8px;
@@ -166,10 +186,10 @@ nav{
 }
 .card_3 h2 {
     margin-top: 10px;
-    color: aliceblue;
+    color: black;
 }
 .card_3 p {
-    color: aliceblue;
+    color: black;
     margin: 10px 0 0 0;
 }
 .card_3 button {
@@ -180,7 +200,7 @@ nav{
     cursor: pointer;
 }
 .card_3 button:hover {
-    background-color: goldenrod;
+    background-color: #E76F51;
     color: antiquewhite;
     transition: all;
     animation-duration: 3s;
@@ -188,20 +208,23 @@ nav{
     animation: all 3s ease-in-out 3s;
 }
 .cardSection {
-    /* display: flex;
-    justify-content: space-around */
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/* TESTINOMAIL SECTION */
+
 .testimonialCards {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 500px 500px 500px;
 }
+    
 .testimonialCard {
-    width: 300px;
-    height: 350px;
-    border: 1px solid;
+    width: 367px;
+    height: 403px;
+    border: 1px solid #777271;
+    border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -215,11 +238,152 @@ nav{
     height: 149px;
 }
 .fa-solid {
-    color: yellow;
-    outline: yellow;
+    color: #E76F51;
+    outline: #E76F51;
 }
 .fa-regular {
-    color: yellow;
+    color: #E76F51;
+}
+span{
+    color: #E76F51;
 }
 
 
+/* FREQUENTLY ASKED QUESTION */
+
+body {
+    color: rgba(4, 57, 94, 1);
+    background: rgba(4, 57, 94, .1);
+    padding: 0 1em 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    width: 600px;
+    margin: 0 auto;
+}
+
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.accordion:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    background: rgba(4, 57, 94, .8);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.accordion-label:hover {
+    background: rgba(4, 57, 94, 1);
+}
+
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    color: rgba(4, 57, 94, 1);
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: rgba(4, 57, 94, .7);
+    font-size: 18px;
+}
+
+input:checked+.accordion-label {
+    background: rgba(4, 57, 94, 1);
+}
+
+input:checked+.accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+input:checked~.accordion-content {
+    max-height: 100vh;
+    padding: 16px;
+}
+
+/* footer */
+footer {
+    background-color: #0c0c10;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer-app {
+    text-align: right;
+}
+
+.footer-app img {
+    width: 140px;
+    margin-top: 10px;
+}
